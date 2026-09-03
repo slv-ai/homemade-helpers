@@ -1,4 +1,10 @@
 def sum(my_collection):
+    if not my_collection:
+        return 0
+    total = 0
+    for value in my_collection:
+        total += value
+    return total
     pass
 
 def test_sum_empty_list():

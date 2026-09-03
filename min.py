@@ -1,5 +1,9 @@
 def min(my_collection):
-    pass
+    min_value = my_collection[0] if my_collection else None
+    for value in my_collection:
+        if value < min_value:
+            min_value = value
+    return min_value
     
 
 def test_min_empty_list():

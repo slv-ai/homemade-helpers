@@ -1,4 +1,11 @@
 def count(my_collection, target):
+    if not my_collection:
+        return None
+    count_value = 0
+    for value in my_collection:
+        if value == target:
+            count_value += 1
+    return count_value 
     pass
     
 

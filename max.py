@@ -1,4 +1,9 @@
 def max(my_collection):
+    max_value = my_collection[0] if my_collection else None
+    for value in my_collection:
+        if value > max_value:
+            max_value = value
+    return max_value
     pass
 
 def test_max_empty_list():
